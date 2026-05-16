@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"E:\\\\ClaudeProjects\\\\EMOS\" -Recurse -Depth 2)",
+      "Bash(Select-Object FullName)",
+      "PowerShell(pip *)",
+      "PowerShell(Get-ChildItem -Path \"E:\\\\ClaudeProjects\\\\EMOS\" -Recurse -Depth 3 | ForEach-Object { $_.FullName })",
+      "PowerShell(.venv\\\\Scripts\\\\pip install faiss-cpu sentence-transformers 2>&1 | Select-Object -Last 25)",
+      "Bash(python *)",
+      "PowerShell(E:\\\\ClaudeProjects\\\\EMOS\\\\.venv\\\\Scripts\\\\python.exe -m pytest E:\\\\ClaudeProjects\\\\EMOS\\\\backend\\\\tests\\\\ -v --tb=short 2>&1)",
+      "Bash(E:\\\\ClaudeProjects\\\\EMOS\\\\.venv\\\\Scripts\\\\python.exe *)",
+      "Read(//mnt/e/ClaudeProjects/**)",
+      "Bash(/mnt/e/ClaudeProjects/EMOS/.venv/Scripts/python.exe -m pytest backend/tests/ -x -q)",
+      "Bash(E:\\\\.venv\\\\Scripts\\\\python.exe -c \"import tree_sitter; print\\(tree_sitter.__version__\\)\")",
+      "Bash(E:\\\\.venv\\\\Scripts\\\\python.exe -c \"import tree_sitter_python; print\\('ts-python ok'\\)\")",
+      "Bash(E:\\\\.venv\\\\Scripts\\\\python.exe -c \"import tree_sitter_javascript; print\\('ts-js ok'\\)\")",
+      "PowerShell(& \"E:\\\\ClaudeProjects\\\\EMOS\\\\.venv\\\\Scripts\\\\python.exe\" -c \"import tree_sitter; print\\(tree_sitter.__version__\\)\" 2>&1)",
+      "PowerShell(& \"E:\\\\ClaudeProjects\\\\EMOS\\\\.venv\\\\Scripts\\\\pip.exe\" install \"tree-sitter>=0.21\" tree-sitter-python tree-sitter-javascript 2>&1 | Select-Object -Last 10)",
+      "Bash(npm --version)",
+      "Bash(npx create-next-app@latest *)",
+      "Bash(npm install *)"
+    ]
+  }
+}

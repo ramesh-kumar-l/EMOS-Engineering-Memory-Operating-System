@@ -1,0 +1,5 @@
+# Phase 2 — Semantic Retrieval dependencies
+# Install separately after validating Python 3.14 wheel availability.
+# If prebuilt wheels are unavailable, use Python 3.11 or 3.12 venv.
+sentence-transformers==3.3.1
+faiss-cpu==1.9.0
